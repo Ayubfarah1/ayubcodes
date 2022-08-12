@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins&display=swap');
+
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+section {
+    height: 250px;
+    background-color: rgb(254, 254, 254);
+    border: rgb(0, 0, 0) 1px;
+
+}
+
+.hero {
+    background-color: #1c1d25;
+    height: 100vh;
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    word-spacing: 5px;
+}
+
+ footer{
+    height: 100vh;
+    background-color: #1c1d25;
+    padding: 0;
+    margin: 0;
+
+ }
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ ul {
+    display:flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-between;
+    font-size: 30px;
+    padding-right: 35px;
+ }
+
+ li {
+   width: 100px;
+   text-decoration: none;
+ }
+ h1{
+    font-size: 90px;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+ }
+ h2 {
+    font-size: 50px;
+    
+  }
+
+ p {
+   font-family: 'poppins', sans-serif;
+    
+    font-weight: 200;
+    font-size: 25px;
+    
+    
+ }
+ 
+ .hero-area{
+   display:flex;
+   height: 100%;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .hero a:link, .hero a:visited{
+   color: white;
+ }
+
+ .hero a:hover{
+   text-decoration: none;
+ }
+
+ .hero-text {
+    margin-left: 40px;
+    margin-bottom: 200px;
+ }
+ 
+ .button {
+    width: 190px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: coral;
+    text-align: center;
+    font-size:30px;
+    padding-top: 2px;
+    margin-top: 20px;
+ }
+
+ .button:hover {
+      background-color: grey;
+ }
+
+ .button:active{
+   background: color #A9A9A9;
+   color: #cc5555
+ }
+
+ .socials{
+   padding-bottom: 200px;
+ }
+
+
+ .logo{
+   width: 150px;
+    height: 120px;
+    margin: 30px;
+ }
+  .social {
+    margin:10px;
+    align-items: center;
+  }
+
+  .contact-social {
+   align-items: center;
+   text-align: center;
+   padding-left: 10px;
+   width: 100;
+   
+   
+  }
+
+  .social{
+   width: 100%;
+  }
+
+  .sub-section {
+
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+.headshot {
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    padding: 20px;
+}
+
+.open{
+   align-items: center;
+   margin: 350;
+   font-weight: 300px ;
+   display: flex;
+   padding-top: 300px;
+   padding-left: 500px;
+}
+.pics{
+   padding-left: 800px ;
+   padding-top: 30px ;
+   color: white;
+   font-style: italic;
+   
+}
+
+.contactme{
+   text-align: center;
+}
+
+.email{
+   text-align: center;
+}
+
+.slider-frame{
+   overflow: hidden;
+   height: 700px;
+   width: 1200px;
+   margin-left: 130px;
+   margin-top: 10px;
+}
+ 
+/*slide animation*/
+
+@-webkit-keyframes slide_animation{
+   0% {left:0px;}
+   10% {left:0px;}
+   20% {left:1200px;}
+   30% {left:1200px;}
+   40% {left:2400px;}
+   50% {left:2400px;}
+   60% {left:1200px;}
+   70% {left:1200px;}
+   80% {left:0px;}
+   90% {left:0px;}
+   1000% {left:0px;}
+}
+
+.slide-images{
+   width:3600px;
+   height: 800px;
+   margin: 0 0 0 -2400px;
+   position: relative;
+   -webkit-animation-name: slide_animation;
+   -webkit-animation-duration: 15s;
+   -webkit-animation-iteration-count: infinite ;
+   -webkit-animation-direction: alternate ;
+   -webkit-animation-play-state:running;
+
+}
+
+.img-container{
+   height: 800px;
+   width: 1200px;
+   object-fit: cover;
+   float: left;
+
+}
+img{
+   height: 800px;
+   width: 1200px;
+   object-fit: cover;
+   float: left;
+}
+
+
